@@ -10,6 +10,7 @@ ASSET(sigawppath4_txt);
 
 
 void sigawp(){
+    chassis.setPose(-61, 13, 30);
     target = 1875;
     pros::delay(200);
     target = 20;
