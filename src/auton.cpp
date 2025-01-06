@@ -9,7 +9,7 @@ ASSET(sigawppath3_txt);
 ASSET(sigawppath4_txt);
 
 
-void sigawp(){
+inline void sigawp(){
     chassis.setPose(-61, 13, 30);
     target = 1875;
     pros::delay(200);
@@ -24,11 +24,11 @@ void sigawp(){
     chassis.follow(sigawppath4_txt, 15 , 8000);
 }
 
-void goalrush(){
+inline void goalrush(){
     
 }
 
-void skills(){
+inline void skills(){
     
 }
 

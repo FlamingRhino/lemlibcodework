@@ -4,7 +4,7 @@ inline lemlib::PID arm_pid(0.45, 0, 0);
 inline float target = 0;
 inline float output = arm_pid.update(target - l_arm.get_position());
 
-void armpidthing(){
+inline void armpidthing(){
     
     while (true) {
         output = arm_pid.update(target - l_arm.get_position());

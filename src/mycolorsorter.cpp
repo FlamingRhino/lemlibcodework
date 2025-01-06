@@ -41,7 +41,7 @@ inline void colortask(){
       }
       
 
-      if(master.get_digital(DIGITAL_RIGHT)){
+      if(master.get_digital(pros::E_CONTROLLER_DIGITAL_LEFT)){
         if(ison){
           ison = false;
         }else{
