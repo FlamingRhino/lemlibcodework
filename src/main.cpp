@@ -23,6 +23,16 @@ void initialize() {
 	pros::Task armTASK(armpidthing);
 	Color.set_led_pwm(100);
 
+
+	selector.on_select([](std::optional<rd::Selector::routine_t> routine) {
+		if (routine == std::nullopt) {
+			std::cout << "No routine selected" << std::endl;
+		} else {
+			std::cout << "Selected Routine: " << routine.value().name << std::endl;
+		}
+	});
+
+
     };
 
 
