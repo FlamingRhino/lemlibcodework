@@ -10,7 +10,8 @@ rd::Selector selector({
     {"Good auton", skills},
 });
 
-
+//console thing
+rd::Console console;
 
 
 
