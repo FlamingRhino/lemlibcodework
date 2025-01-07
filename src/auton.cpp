@@ -14,7 +14,7 @@ inline void sigawp(){
     target = 1875;
     pros::delay(200);
     target = 20;
-    chassis.follow(sigawppath1_txt, 15 , 8000, false);
+    chassis.follow(sigawppath1_txt, 15 , 8000, true);
     mogoal.extend();
     intake2.move(127);
     chassis.follow(sigawppath2_txt, 15 , 8000);

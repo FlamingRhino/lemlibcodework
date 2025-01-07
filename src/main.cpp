@@ -163,7 +163,7 @@ void opcontrol() {
         
 
 		if(!pros::competition::is_connected()){
-			if(master.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_LEFT) & master.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_RIGHT)){
+			if(master.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_Y)){
 				autonomous();
 			}
 		}
